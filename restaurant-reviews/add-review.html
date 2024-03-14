@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add review Page</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Restaurant Reviews</h1>
+            <ul class="nav_ul">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="add-review.html">Add Review</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div>
+                <div>
+                    <h2>Add Review</h2>
+                 </div>
+                <div class="form">
+                    <form action="#" method="POST" enctype="multipart/form-data">
+                        <div class="m10">
+                            <label for="name">Name?</label>
+                            <input type="text" name="name" id="name">
+                        </div>
+                        <div class="m10">
+                            <label for="restaurant">Restaurant?</label>
+                            <select name="restaurant" id="restaurant">
+                                <option value="">Choose one...</option>
+                                <option value="main street cafe">Main Street Cafe</option>
+                                <option value="greek house">Greek House</option>
+                            </select>
+                        </div>
+                        <div class="m10">
+                            <label for="date of visit">Date of visit?</label>
+                            <input type="date" name="date-of-visit" id="date-of-visit">
+                        </div>
+                        <div class="m10">
+                            <label for="rating">Rating?</label>
+                            <input type="number" id="rating" name="rating" value="5">
+                        </div>
+                        <div class="m10">
+                            <label for="details">Details?</label>
+                            <textarea name="rating-details" id="rating-details" cols="30" rows="10"></textarea>
+                        </div>
+                        <div class="m10"> 
+                            <input type="submit" name="submit-form" id="submit-rating-form">
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </section>
+ 
+
+    </main>
+    <footer>
+        <p>&copy; 2024 Restaurant Review</p>
+    </footer>
+</body>
+</html>

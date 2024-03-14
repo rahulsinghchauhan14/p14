@@ -1,0 +1,26 @@
+.nav_ul{
+    list-style: none;
+    display: flex;
+    padding-left: 0px;
+}
+
+.nav_ul > li{
+    padding: 5px;
+}
+
+.rating{
+    margin: 10px 0px;
+}
+
+.m10{
+    margin: 10px 0px;
+}
+
+.contact-us-italic{
+    font-style: italic;
+    margin: 10px 0px;
+}
+
+.contact-us-italic > p {
+    margin: 0;
+}
