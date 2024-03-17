@@ -1,0 +1,31 @@
+body{
+    font-family: Roboto, sans-serif, Helvetica;
+}
+
+:root {
+    --table-color: green;
+    --row-bg-color: #F0FFF0;
+}
+/* .container{
+   
+    display: inline-block;
+   
+} */
+
+#game-table{
+    border: 2px solid var(--table-color);
+    height: 200px;
+    width: 400px;
+    text-align: center;
+}
+
+#game-table caption {
+    text-transform: uppercase;
+    background-color: green;
+    color: white;
+    padding: 10px;
+}
+
+#game-table tr:nth-child(even){
+    background-color: var(--row-bg-color);
+}
