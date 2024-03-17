@@ -1,0 +1,35 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root{
+    --heading-bg-color: red;
+}
+
+.universityLogo{
+    width: 300px;
+    padding: 5px;
+}
+
+h1{
+    background-color: var(--heading-bg-color) ;
+    padding: 5px;
+    color: #ffffff;
+    font-size: 24px;
+}
+
+#author-name-and-date{
+    font-size: 12px;
+    color: lightgray;
+}
+
+.description{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    color:gray;
+}
+
+.shareLink a{
+    font-size: 12px;
+    color: blue;
+}
