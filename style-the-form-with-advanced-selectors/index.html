@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rate a Product</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+        <h1>Rate a Product</h1>
+        <p><span class="required"></span> indicates required field.</p>
+
+        <div class="form-control">
+            <label for="product" class="required">Product</label>
+            <input type="text" name="product" id="product">
+        </div>
+
+       <div class="form-control">
+        <label for="purchase date" class="required">Purchase Date</label>
+        <input type="date" name="purchase_date" id="purchase_date">
+       </div>
+
+       <div class="form-control">
+           <label for="rating" class="required">Rating</label>
+           <input type="number" name="rating" id="rating">
+       </div>
+
+       <div class="form-control">
+           <label for="comment">Comments</label>
+           <textarea name="comment" id="comment" cols="30" rows="3"></textarea>
+       </div>
+
+
+
+        <input type="submit" value="Submit Rating" name="submit-rating" id="submit-rating">
+</body>
+</html>
