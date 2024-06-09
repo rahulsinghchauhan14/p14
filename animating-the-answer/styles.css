@@ -1,0 +1,62 @@
+body {
+   font-family: Calibri, sans-serif;
+   font-size: 3em;
+}
+
+#answer {
+   color: black;
+   width: 100px;
+
+   /* Part of your solution goes here */
+   display: inline-block;
+   opacity: 0; /* Initially hidden */
+   position: relative;
+   animation: moveUp 3s ease-in-out forwards;
+   /* Ensure the answer starts below the question */
+   transform: translate(0,0);
+}
+
+/* moveFraction goes here */
+
+
+#question {
+   /* Part of your solution goes here */
+animation: none;
+}
+
+#question:hover {
+   /* Part of your solution goes here */
+   animation: increaseDecreaseSize 2s infinite;
+}
+
+span {
+   display: inline-block;         
+}
+
+@keyframes increaseDecreaseSize {
+    0% {
+        font-size: 48px;
+    }
+    50% {
+        font-size: 24px;
+    }
+    100% {
+        font-size: 48px;
+    }
+}
+ 
+
+@keyframes moveUp {
+    0% {
+        transform: translateY(100%); /* Start below the question */
+        opacity: 0; /* Hidden */
+    }
+    50% {
+        transform: translate(100%, 100%); /* Move to the right and below */
+        opacity: 1; /* Become visible */
+    }
+    100% {
+        transform: translate(0, 0); /* Move to the final position */
+        opacity: 1; /* Fully visible */
+    }
+}
