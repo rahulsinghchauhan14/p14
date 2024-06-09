@@ -1,0 +1,15 @@
+span{
+    display: flex;
+}
+
+.card{
+    padding: 10px;
+    background-color: yellow;
+    margin: 10px;
+    box-shadow: 10px 10px black;
+    width: fit-content;
+}
+
+h3, p{
+    margin: 0px 0px 10px 10px
+}
