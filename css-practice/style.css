@@ -1,0 +1,40 @@
+.title{
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 800;
+    margin: 10px 0px 10px 0px;
+}
+.container{
+    display: block;
+    width: 600px;
+    height: 280px;
+    background-color:#F0F0F0;
+    border: 2px solid blue;
+    padding: 5px;
+}
+.container-yellow{
+    background-color: yellow;
+    float: left;
+    width: 200px;
+    padding: 10px;
+    margin: 0px 10px 0px 0px;
+}
+
+.container-orange{
+    background-color: orange;
+    left: 110px;
+    top: 180px;
+    width: 200px;
+    position: absolute;
+    padding: 10px;
+}
+.container-orange-red{
+    background-color: orangered;
+    color: white;
+    float: right;
+    width: 200px;
+    padding: 10px;
+    margin: 20px 40px 0px 0px;
+}
