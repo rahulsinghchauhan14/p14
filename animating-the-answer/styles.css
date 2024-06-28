@@ -10,7 +10,7 @@ body {
    /* Part of your solution goes here */
    display: inline-block;
    opacity: 0; /* Initially hidden */
-   position: relative;
+   position: absolute;
    animation: moveUp 3s ease-in-out forwards;
    /* Ensure the answer starts below the question */
    transform: translate(0,0);
