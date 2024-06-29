@@ -1,0 +1,42 @@
+.container{
+    display: grid;
+    width: 100%;
+}
+
+.title{
+    font-size: 25px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.box{
+    border: 1px solid rgb(84 208 217);
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+    padding: 5px;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+.tic-tac-layout{ 
+    font-family: sans-serif;
+    margin: 25px auto 25px auto;
+    width: fit-content;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr); 
+}
+
+.red{
+    color: red;
+    font-size: 100px; 
+}
+
+.blue {
+    
+    color: blue;
+    font-size: 100px; 
+}
