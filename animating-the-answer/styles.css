@@ -2,61 +2,35 @@ body {
    font-family: Calibri, sans-serif;
    font-size: 3em;
 }
-
-#answer {
-   color: black;
-   width: 100px;
-
-   /* Part of your solution goes here */
-   display: inline-block;
-   opacity: 0; /* Initially hidden */
-   position: absolute;
-   animation: moveUp 3s ease-in-out forwards;
-   /* Ensure the answer starts below the question */
-   transform: translate(0,0);
-}
-
-/* moveFraction goes here */
-
+ 
+#answer { 
+   animation: moveFraction 2s forwards 1s;  
+} 
 
 #question {
-   /* Part of your solution goes here */
-animation: none;
+    transition: transform 0.6s ease-in-out;
 }
 
-#question:hover {
-   /* Part of your solution goes here */
-   animation: increaseDecreaseSize 2s infinite;
+#question:hover { 
+   transform: scale(0.9); 
 }
 
 span {
    display: inline-block;         
 }
 
-@keyframes increaseDecreaseSize {
+@keyframes moveFraction {
     0% {
-        font-size: 48px;
+      color: yellow;
+      transform: translate(-355px, 60px); 
     }
     50% {
-        font-size: 24px;
+      transform: translate(0px, 60px); 
     }
     100% {
-        font-size: 48px;
+      color: red;
+      transform: translate(0px, 0px); 
     }
-}
+  }
  
-
-@keyframes moveUp {
-    0% {
-        transform: translateY(100%); /* Start below the question */
-        opacity: 0; /* Hidden */
-    }
-    50% {
-        transform: translate(100%, 100%); /* Move to the right and below */
-        opacity: 1; /* Become visible */
-    }
-    100% {
-        transform: translate(0, 0); /* Move to the final position */
-        opacity: 1; /* Fully visible */
-    }
-}
+ 
